@@ -1,0 +1,46 @@
+
+@mixin font($font_name, $file_name, $weight, $style) 
+    @font-face 
+        font-family: $font_name
+        font-display: swap
+        src: url("../fonts/$file_name.woff") format("woff"), url("../fonts/$file_name.woff2") format("woff2")
+        font-weight: $weight
+        font-style: $style    
+
+@import 'fonts'
+
+*
+    padding: 0
+    margin: 0
+.container
+    margin: 0 auto
+    width: 95%
+
+*
+    font-family: 'Open Sans', sans-serif
+h1
+    font-weight: 700
+    font-style: normal
+    font-size: 50px
+h2
+    font-weight: 700
+    font-style: normal
+    font-size: 58px
+h3
+    font-weight: 700
+    font-style: normal
+    font-size: 25px
+h4
+    font-family: 'Dancing Script', cursive
+    font-size: 91px
+p
+    font-weight: 400
+    font-style: normal
+    font-size: 16px
+
+
+@import 'header'
+@import 'projects'
+@import 'mission'
+@import 'profit'
+@import 'contacts'

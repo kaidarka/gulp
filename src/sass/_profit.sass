@@ -1,0 +1,95 @@
+.profit
+    padding: 50px 0
+    &__title
+        text-align: center
+        margin-bottom: 50px
+
+    &__container
+        width: 80%
+        margin: 0 auto
+        position: relative
+    
+        
+    &__name
+        margin-bottom: 20px
+    &__text
+    &__info
+        max-width: 500px
+        margin: 0 auto
+        margin-top: 50px
+        text-align: center
+        padding: 0 20px
+    &__btn
+        padding: 15px 30px
+        border: 2px solid #cf1317
+        background: none
+        text-transform: uppercase
+        border-radius: 30px
+        display: block
+        margin: 0 auto
+        margin-top: 30px
+        font-weight: 600
+        &:hover
+            background: #cf1317
+            color: #ffffff
+
+
+.profit-block
+    max-width: 500px
+    padding: 0 30px
+    position: relative
+    margin-bottom: 40px
+    & span
+        color: #cf1317
+        font-size: 50px
+        position: absolute
+        top: -15px
+
+.block-1
+    border-left: 2px solid #cf1317
+    transform: translate(70%, 0px)
+    opacity: 0
+    transition: all .6s ease .3s
+    &._active
+        transform: translate(0%, 0px)
+        opacity: 1
+    & span
+        left: -50px
+
+.block-2
+    border-right: 2px solid #cf1317
+    text-align: right
+    margin-left: auto
+    transform: translate(-70%, 0px)
+    opacity: 0
+    transition: all .6s ease .3s
+    &._active
+        transform: translate(0%, 0px)
+        opacity: 1
+    & span
+        right: -50px
+
+@media screen and ( max-width: 500px )
+    .profit
+        &__container
+            width: 100%
+            margin: 0
+        &-block
+            margin-left: 60px
+    .block-2
+        border: none
+        border-left: 2px solid #cf1317
+        text-align: left   
+        margin-right: 0
+        & span
+            right: 0
+            left: -50px
+@media screen and ( max-width: 450px )
+    .profit__title
+        font-size: 30px
+    .block-1
+        transform: translate(0%, 0px)
+        opacity: 1
+    .block-2
+        transform: translate(0%, 0px)
+        opacity: 1

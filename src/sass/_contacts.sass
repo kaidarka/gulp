@@ -1,0 +1,114 @@
+.contacts
+    display: flex
+    padding: 30px 50px
+    justify-content: space-between
+    position: relative
+    &__line
+        height: 300px
+        top: 50px
+        position: relative
+        border: 1px solid #cf1317
+    &__icons
+        display: flex
+        align-items: center
+    &__icon 
+        margin-right: 7px
+        &:hover
+            & path
+                fill: #cf1317
+
+.contacts-form
+.form
+
+    &__title
+        margin-bottom: 50px
+    &__input
+        margin-bottom: 30px
+        padding: 15px 10px
+        border-radius: 10px
+        border: 1.5 px solid #000
+    &__btn
+        padding: 15px 30px
+        border: 2px solid #cf1317
+        background: none
+        text-transform: uppercase
+        border-radius: 30px
+        font-weight: 600
+        margin-top: 20px
+        &:hover
+            background: #cf1317
+            color: #ffffff
+
+
+.form-control
+    display: flex
+    flex-direction: column
+    max-width: 500px
+
+.input-cont
+
+.input-text
+
+.contacts-text
+    margin-right: 50px
+
+.text
+    &__title
+        margin-bottom: 50px
+    &__phone
+
+    &__email
+
+    &__location
+    &__info
+        margin-bottom: 30px
+        display: flex
+        align-items: center
+        & svg
+            margin-right: 10px
+        &:hover
+            & path
+                fill: #cf1317
+            & a
+                color:#cf1317
+
+        & a
+            text-decoration: none
+            color: #000
+            
+
+.phone
+    &__link
+
+
+.email
+    &__link
+
+
+@media screen and ( max-width: 1100px )
+    .contacts-text
+        margin-right: 0px
+
+@media screen and ( max-width: 1000px )
+    .contacts
+        flex-direction: column
+        align-items: center
+        &__line
+            margin-bottom: 70px
+            width: 400px
+            height: 0
+    .text
+        &__title
+            text-align: center
+
+@media screen and ( max-width: 450px )
+    .form
+        &__title
+            font-size: 30px
+    .text
+        &__title
+            font-size: 30px
+    .contacts
+        padding: 30px 10px
+        &__line
+            width: 300px
